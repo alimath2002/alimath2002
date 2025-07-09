@@ -1,0 +1,47 @@
+.stars-container {
+            display: flex;
+            font-size: 0;
+            position: relative;
+            width: fit-content;
+            margin:22px auto;
+        }
+        
+        .stars-background {
+            display: flex;
+        }
+        
+        .stars-fill {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%; /* Initial percentage */
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        
+        .star {
+            font-size: 20px;
+            color: #ccc; /* Empty star color */
+            position: relative;
+            display: inline-block;
+        }
+        
+        .stars-fill .star {
+            color: #ffcc00; /* Filled star color */
+        }
+        
+        .percentage-text {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            margin-top: 10px;
+        }
+        
+        .controls {
+            text-align: center;
+            margin: 20px;
+        }
+        
+        input[type="range"] {
+            width: 100px;
+        }

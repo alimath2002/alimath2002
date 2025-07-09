@@ -1,0 +1,60 @@
+@font-face{font-family:bnaz;src: url("../fonts/static/Roboto-Regular.ttf");
+    margin: 0% auto;}
+    *{margin: 0px; font-family:bnaz ;}
+    body {background-color: white;}
+    a{color:black; text-decoration:none;background-color:rgb(rgba(255, 0, 0, 0), rgba(0, 128, 0, 0), rgba(0, 0, 255, 0));}
+    body{margin:0px;}  
+    header { background-color: ;}
+        h1{text-align: right ;margin:0px;align-items: flex-end; }
+        nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr  4fr; color:rgb(46, 43, 43) ;padding-top:5px ;font-size:20px ;
+        direction: rtl;background-color: rgb(255, 255, 255);}
+        nav div{ display: flexbox; gap:5px;margin:5px ;text-align: center;cursor: pointer ;border-radius: 2%; text-align: center;}
+        nav div a{justify-items: center;align-items: center;text-align: center;padding-top: 3%;}
+        nav div:hover{ background-color: rgba(84, 85, 84, 0.726);padding: auto auto;}
+        nav div a:hover{color: rgb(44, 44, 39);}
+        nav div a:active{color: rgb(180, 44, 143);}
+        .navbuttom{height: 100%;width: 100%;}
+        #menupage{overflow:scroll;border-radius: 5%;animation: imerge 0.3s;}
+#menupage div{border-bottom: 1px solid rgb(237, 235, 235) ;padding: 5%;cursor: pointer;animation: imerge2 2s;}
+#menupage a{color: white; height: 100%;width:100%;}
+#menupage div:hover{background-color: rgb(99, 255, 47);animation: coloring 1s;}    
+#mainnavcontiner{ box-shadow: 3px 3px rgb(20, 227, 227);} 
+@keyframes coloring{from{background-color:rgba(255, 255, 255, 0);}
+to{background-color:  rgb(99, 255, 47);}    
+} 
+
+@keyframes imerge{from{width: 0%;}
+to{width: 70%;}    
+} 
+@keyframes imerge2{from{width: 0%;}
+to{width: 100%;}    
+} 
+
+main{background-color: white;padding-bottom:2% ;}
+   
+
+
+
+       
+    #blurerfoot{position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;height: 600px;background-color: rgba(33, 115, 230, 0.5);}
+    
+    footer{text-align: center;border-top:solid 3px ;display: grid ;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));margin:0px ;color: aliceblue;
+    }
+    footer div{ text-align: center;z-index: -1;}
+    footer div p{padding:8px ;}
+    footer div{ height:250px ;} 
+   
+    
+    @media screen and (max-width:910px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} #corpname{display: none; }  .minimmm{display: block;} #minimenue{display: none;} }
+
+    @media screen and (max-width:3000px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} nav div{height: 45px; display: grid;place-content:center ;}  #mini_menue{ background-color: blue; }
+     .minimmm{display: block;} #minimenue{display: none;} }
+    
+    @media screen and (max-width:560px){nav{position: fixed;} #corpname{display: none; }    .minimmm{display: block;} .overnav{display: none;} 
+    main{margin-top:80px}  #mainnavcontiner{position: fixed;}
+  .navbuttom{display: none;} footer{display: block; width: 100%;} 
+#parta{display: grid ;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));} #minimenue{display: block;} .partb div{font-size: 13px;}
+
+footer div{ height:100px ;}  
+#blurerfoot{ height:150px ;} 
+}

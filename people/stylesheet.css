@@ -1,0 +1,56 @@
+
+h3{text-align: center;}
+
+@keyframes coloring{from{background-color:rgba(255, 255, 255, 0);}
+to{background-color:  rgb(99, 255, 47);}    
+} 
+
+@keyframes imerge{from{width: 0%;}
+to{width: 70%;}    
+} 
+@keyframes imerge2{from{width: 0%;}
+to{width: 100%;}    
+} 
+
+main{background-color: white;padding-bottom:2% ;}
+    #studentdisp{background-color: white;padding: 3% 3%;}
+    .students{background: linear-gradient(to top right  ,rgb(22, 66, 169),rgb(38, 199, 132));display: grid; grid-template-columns: 1fr 5fr;
+    border-radius:15px; padding: 4px; margin: 3% 0;}
+    .students  div{text-align: center;justify-content: center; } 
+   .students image{height: 1rex; width:1rex ;}
+   .students picture{padding: 10px;}
+   .students img{box-shadow: 3px 3px 3px;height:135px; width:110px ;}
+
+   #searchresultbox div:hover{background-color: antiquewhite;cursor: pointer;height: 19px;}
+   #searchresultbox div{width:300px;height: 17px;overflow: hidden;font-size: 14px;}
+   #searchresultbox{}
+
+    @keyframes bar {from{right:100%} to{right: 0%;}
+        
+    }
+    
+
+    @keyframes coloringgray{from{background-color:rgba(255, 255, 255, 0);}
+    to{background-color:  rgb(212, 212, 212);}    
+    }   
+    
+    
+    @keyframes scale{50%{transform:scale(2,2) ;}}
+    
+    
+    
+    @keyframes sheetpaper{from{right:90%} to{right: 0%;}    
+    }
+    
+    
+  
+    @media screen and (max-width:910px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} #corpname{display: none; }  .minimmm{display: block;} #minimenue{display: none;} }
+
+    @media screen and (max-width:3000px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} nav div{height: 45px; display: grid;place-content:center ;}  #mini_menue{ background-color: blue; }
+     .minimmm{display: block;} #minimenue{display: none;} }
+    
+    @media screen and (max-width:560px){nav{position: fixed;} #corpname{display: none; }    .minimmm{display: block;} .overnav{display: none;} 
+    main{margin-top:80px}  #mainnavcontiner{position: fixed;}
+  .navbuttom{display: none;} footer{display: block; width: 100%;} 
+#parta{display: grid ;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));} #minimenue{display: block;} .partb div{font-size: 13px;}}
+    
