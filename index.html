@@ -14,94 +14,85 @@
 <link href="stylesheet.css" rel="stylesheet">
 
 <link href="./menu.js" type="javascript">
-
+<link href="./randompoints.js" type="javascript">
 
 <meta name="description" content="Ali matin sepehr personal website">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
 </head>
 
 <body onclick="down()" onscroll="down()" >
 
-  <img src="images/head.jpg" alt="SUT-civil" style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;">
-  
+  <div  alt="SUT-civil" style="position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;" id="backwebimage">
+  </div>
   <div  
-  id="blurerfoot"></div>
+  id="blurerfoot">
   </div>
   
   <div style="color: white;">
     <div id="menupage" style="position: absolute;right: 0%;width: 74%;
-    height: 100%;background:linear-gradient(to bottom ,rgb(143, 143, 228), rgb(85, 85, 114)); z-index: 4;display: none;
+    height: 100%;background:linear-gradient(to bottom ,rgb(82, 82, 238), rgb(11, 11, 99)); z-index: 4;display: none;
     position: fixed;" class="menulittle">
     <div style="display: flex;align-items: center;justify-content: center;align-content: center;">
       <h1 style="text-align: center;">
-        
+        Dr. Mirmosadegh jamali
       </h1>
   
     </div>
   <div onclick="openspcmenu(1)" onmousemove="openspcmenu(1)">
     About
     <div class="aboutmenue1 ; aboutmenuall" style="display: none;">
-      <a href="index.html" style=" display: block;width: 100%;height: 100%;"> About me </a>
+      <a href="index.html" style=" display: block;width: 100%;height: 100%;"> Ali M. Sepehr</a>
     </div>
     
   </div>
   
   <div onclick="openspcmenu(2)" onmousemove="openspcmenu(2)">
     publication
-    <a href="" style=" display: block;width: 100%;height: 100%;">
+    <a href="./publication/Research&Studies.html" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
-      Conference & Papers
+      Research & Studies
     </div></a>
-    <a href="" style=" display: block;width: 100%;height: 100%;"> 
+    <a href="./publication/papers.html" style=" display: block;width: 100%;height: 100%;"> 
     <div class="aboutmenue2 ; aboutmenuall" style="display: none;">
-      Research
+      Papers
     </div></a>
-    
+   
     
   </div>
   <div onclick="openspcmenu(3)" onmousemove="openspcmenu(3)">
-    people
-    <a href="" style=" display: block;width: 100%;height: 100%;">
+    News & Events
+    <a href="./News/news.html" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
-      Art 
+      News & Events
     </div></a>
-    <a href="" style=" display: block;width: 100%;height: 100%;">
-    <div class="aboutmenue3 ; aboutmenuall" style="display: none;">
-      Community
-    </div></a>
+   
     
   </div>
   <div onclick="openspcmenu(4)" onmousemove="openspcmenu(4)">
-    projects
-    <a href="" style=" display: block;width: 100%;height: 100%;">
+    Projects
+
+    <a href="./projects/civil.html" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
-       Civil engineering 
+      Civil Projects : Simiulation And Softwares
     </div></a>
-    <a href="" style=" display: block;width: 100%;height: 100%;">
+
+    <a href="./projects/web.html" style=" display: block;width: 100%;height: 100%;">
     <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
-       Programming And web designing
+       Web programming & Apps
     </div></a>
-    <a href="" style=" display: block;width: 100%;height: 100%;">
-    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
-      Educational 
-    </div></a>
-    <a href="" style=" display: block;width: 100%;height: 100%;">
-    <div class="aboutmenue4 ; aboutmenuall" style="display: none;">
-       Industrial
-    </div></a>
+    
+   
   
   </div>
   
-  <div onclick="openspcmenu(5)" onmousemove="openspcmenu(5)">
-    <a href="" style=" display: block;width: 100%;height: 100%;"> News & Events</a>
-  
-  </div>
+ 
     </div>
   </div>
   
   
     <div style="position: absolute;right: 0%;width: 100%;height:100%; 
-    background-color: rgba(5, 4, 4, 0.523); z-index: 3; position: fixed;display: none;"
+    background-color: rgba(5, 4, 4, 0.523); z-index:1; position: fixed;display: none;"
     onclick="closemenue()" class="menulittle">
   
   
@@ -115,16 +106,35 @@
         margin: 10px 10px 4px 10px ;">
       -->
         <div style="display: flexbox; ">
-     
+      <img src="images/OIP.png" alt="sharif" style="width: auto;cursor:pointer;display: inline-block; position: fixed;z-index:4 ;
+      padding-left: 5px; padding-top: 10px;" 
+      id="toplogo">
       
-  <div  class="overnav" style="margin-bottom:13px;direction: rtl;padding-top:5px;padding-right:5px;">
-    
-   </div>
-  
-    <div class="overnav" style="margin-bottom:10px;direction: rtl;padding-right:5px;">
+ 
+      
+      <div style="text-align: right;">
+        <a href="index.html" style="color: black;">
+        <h2 id="corpname" style="padding: 20px;background: linear-gradient(to left,rgb(41, 124, 240),rgb(38, 228, 180)); color: aliceblue;
+        font-size: 38px;font-family: boldedde;">
+            Sharif University of Technology
+            
+          </h2>
+     
+        </a>
+     
+        
+      </div>
 
+ 
+  
+    <div class="overnav" style="padding:10px;direction: rtl;padding-right:5px;background: linear-gradient(to left,rgb(41, 124, 240),rgb(38, 228, 180));color: aliceblue;
+    font-size: 30px;padding-right:20px ;padding-bottom:14px ;">
+      Ali Matin Sepehr
+  
   </div>
-  <div></div>
+  <div class="overnav">
+    
+  </div>
   
   
   
@@ -133,31 +143,25 @@
             
   
   
+  <script type="text/javascript"> 
+
+var offsets = document.querySelector("body").getBoundingClientRect();
+    var userview = offsets.top;
+    var pageweidth =offsets.width;
+
+
+if (pageweidth<700) {
+
+  
+document.getElementById('corpname').textContent="Sharif University";
+document.getElementsByClassName('overnav')[0].textContent="Civil Engineering";
+
+}
+
+  </script>
   
   
-  
-     
-      
-   <div style="text-align: right;">
-     <a href="" style="color: black;">
-     <h2 id="corpname" style="margin-right: 20px;">
-         Im Namen gott
-         
-       </h2>
-  
-     </a>
-  
-     <!--
-     <div style="direction: rtl;">
-     <select name="" id="" onchange="location=this.value;" style="cursor:pointer;margin:0%;display:block;height:50px ; width:45px ; font-size:0% ;background: url(medise.saman/images/OIP\ \(1\).png);background-repeat:no-repeat  ;background-size:50px 50px;border: 0px;" >
-       <option  value="" style="font-family: bnaz;font-size: 26px; color: aliceblue; background-color: blue;">english</option>
-       <option value="" style="font-family: bnaz;font-size: 26px; color: aliceblue; background-color: blue;">فارسی</option>
-     
-     </select>
-     </div>
-     -->
-   </div>
-  
+    
   
    <script type="text/javascript">
   
@@ -181,16 +185,15 @@
     var offsets = document.querySelector("body").getBoundingClientRect();
     var userview = offsets.top;
     var pageweidth =offsets.width;
-  
+
     if(top < 3 & pageweidth>560){
       
       document.getElementById('corpname').style.display="none";
       document.getElementsByClassName('overnav')[0].style.display="none";
       document.getElementsByClassName('overnav')[1].style.display="none";
+      document.getElementById('mainnavcontiner').style.position="fixed";
       
-      document.getElementById('navigation').style.position="fixed";
-      document.getElementById('navborder').style.position="fixed";
-  
+
     }
     if(userview > -10  & pageweidth>560){
   
@@ -199,84 +202,88 @@
    document.getElementsByClassName('overnav')[1].style.display="block";
   
   document.getElementById('navigation').style.position="relative";
-  document.getElementById('navborder').style.position="relative";
-  
+  document.getElementById('mainnavcontiner').style.position="relative";  
   
   }
   
- 
+  
+  if(userview > -130  & pageweidth>560 &  document.getElementsByClassName('overnav')[0].style.display=="block"  ){
+  
+  let a=130+userview*0.4;
+  document.getElementById('toplogo').style.height =a+'px';
+  
+  
+  }else{ 
+    document.getElementById('toplogo').style.height =75+'px';
+  }
+
+
+
 
     }
+
     </script>
   
-  <div style=""  class="navcontainer">
-    
-  </div>
-  
-  </div>
+  <div  class="navcontainer" style="background-color: white;z-index: 2;">
+   
   
   
-  <div style="height: 60px;background-color: rgb(255, 255, 255);width: 100%; "  class="navcontainer" id="mainnavcontiner">
-    
+<div style="height: 90px;background: rgb(255, 255, 255);width: 100%;z-index: 2; "  class="navcontainer" id="mainnavcontiner">    
   
   <div style="background-color: rgb(255, 255, 255);direction: rtl;" id="minimenue">
     <img style="cursor: pointer;" onclick="openmenue()" width="48" height="48" src="https://img.icons8.com/color/48/menu--v1.png" alt="menu--v1"/>
   </div>
   
    <nav id="navigation">
-    <div class="navbuttom" style="height: 45px;">
-     <a href="" style="display: block;height: 100%;">
     
-        News and Events
-    
-       </a>
-    </div>
-    <div class="navbuttom">
-      
-      
-     <select name="proj" class="navbut" id="selection2" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-       <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > Courses</option>
-       <option value="courses/fluidmechanic.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> fluid Mechanics</option>
-       <option value="courses/hydrulics.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  Hydraulics </option>
-       <option value="courses/Environmentaleng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Environmental Hydrodynamics </option>
-       <option value="courses/creativityeng.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Creativity and Innovation in Engineering</option>
-     </select>
-  <script type="text/javascript">
-  setInterval(()=>{
-    let m=document.querySelector(".navbut")[0];
-    m.selected='true';
-  },1000)
-   
-   
-   </script>
-  
-  
-    </div>
-    
-    <div class="navbuttom">
-    <select name="proj"  class="navbut" id="selection3" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > people</option>
-      <option value="people/graduates.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Graduate Students </option>
-      <option value="people/community.html" style="background-color: rgb(121, 121, 137);cursor: pointer;">  community </option>
-    </select>
-  </div>
-    
-  <div class="navbuttom">
-    <select name="proj" class="navbut"  id="selection4" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-      <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > publication</option>
-      <option value="publication/papers.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Papers  </option>
-      <option value="publication/research.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Research And Studies </option>
-      <option value="publication/conference.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> Conference Papers </option>
-    </select>
-  </div>
-  
+
+  <div  style="height: 75px;padding-top:0px;padding-bottom:0px;width: 0px;z-index: 2;" id="removeonphone">
      
-    <div class="navbuttom">
-      <select name="proj" class="navbut"  id="selection5" onchange="location=this.value;" style="cursor: pointer;gap:3px ;font-family:bnaz;font-size: 20px ;background:linear-gradient(to bottom ,rgba(96, 136, 236, 0),rgba(49, 110, 243, 0)) ;width:100% ; border:none;  height:100% ;color:black;"> 
-        <option value="" style="background-color: rgb(121, 121, 137);font-size: 0%;pointer-events: none;" selected > About</option>
-        <option value="index.html" style="background-color: rgb(121, 121, 137);cursor: pointer;"> About Dr. jamali </option>
-      </select>
+    
+  </div>
+
+
+   
+    <!-- Navigation button -->
+    <button class="nav-button">
+      Projects
+      <!-- Dropdown menu -->
+      <div class="dropdown-menu" >
+
+        <a href="./projects/civil.html" style="z-index: 71;">       Civil Projects : Simiulation And Softwares</a>
+        <a href="./projects/web.html" style="z-index: 71;">Web programming & Apps </a>
+       
+
+      </div>
+    </button>
+
+
+
+<button class="nav-button" >
+    <a href="./news/news.html" style="color: unset; padding:20px 20px;display: inline-block;">  News & Events </a>
+    </button>
+    
+
+
+ <button class="nav-button" >
+      publication
+      <!-- Dropdown menu -->
+      <div class="dropdown-menu" >
+      
+        <a href="./publication/Research&Studies.html" > Research & Studies</a>
+<a href="./publication/papers.html" > Papers</a>
+
+
+       
+
+      </div>
+
     </div>
+    </button>
+
+ 
+  
+   
   
   
   
@@ -284,7 +291,6 @@
   </nav>
   
   
-    
      
   </div>
   
@@ -294,146 +300,160 @@
   
   </header>
   
-  <div id="navborder"
-  style="height: 5px;background:linear-gradient(to right ,rgba(20, 205, 97, 0.963),rgba(43, 94, 205, 0.985));z-index: 1;width: 100%;">
-  
-  </div>
 
    <main>
       
-  <div id="parta">
+  <div id="parta" >
     
       <div class="noneimportant" >
-        <h1>   </h1>
-       <div style="padding:2% 0% ;"><b style="font-size: larger;">supported Accounts</b></div>
-       <div style="display: grid;grid-template-columns: 1fr 1fr;">
+<picture>
+<img src="./images/پرسنلی.jpg" alt="">
 
-       <div style="padding:0.5% 0% ;">
-    linkedin
-       </div>
-
-       <div style="padding:0.5% 0% ;">
-        <a href="www.linkedin.com/in/ali-matin-sepehr-0b9220321" style="color: blue;">
-        www.linkedin.com/in/ali-matin-sepehr-0b9220321
-        </a>
-       </div>
-
-       <div style="padding:0.5% 0% ;">
-         upWork
-      </div>
-      <div style="padding:0.5% 0% ;">
-        <a href="www.linkedin.com/in/ali-matin-sepehr-0b9220321" style="color: blue;">
-        www.linkedin.com/in/ali-matin-sepehr-0b9220321
-        </a>
-       </div>
-
-      </div>
-    </div>
-     
-      <div class="noneimportant" id="address">
-        <div ><h1 style="text-align: center; ">About Me</h1></div>
+</picture>
+     <div class="noneimportant" id="address" style="padding: 1% 20% ;">
+        <div ></div>
+        <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>Name</b></div>
+        <div style="margin-bottom: 14px;">
+        Ali Matin Sepehr
+        </div>
         <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>EMAIL</b></div>
        <div style="margin-bottom: 14px;">
        <a href="mailto:aliseper2002@gmail.com" style="margin-bottom: 8px;color: blue;">aliseper2002@gmail.com</a>
        </div>
 
-       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>Education</b></div>
-       <div style="margin-bottom: 14px;">
-        Bachelor of Civil Engineering - Sharif University of Technology
-        <br>
-        Master's student in Water Resources Engineering - Sharif University of Technology
-       </div>
+       <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" fill="#0077B5"/>
+</svg>
+
+        <a href="www.linkedin.com/in/ali-matin-sepehr-0b9220321" style="color: blue;">
+    linkedin</a>
+  </b></div>
+
+
+        
+               <div style="margin-bottom: 14px;">
+
+</div>
+       
 
        <div style="padding: 10px; border-top:1px solid rgb(48, 226, 246) ;border-radius: 0;"><b>Intrests</b></div>
        <div style="margin-bottom: 14px;">
        Travelling Abroad, Programming , Movies,astronomy
        </div>
 
-       
+      </div> 
 
-      </div>
+      
+       
      
       
+     
       
+    </div>  
+
+<div>
+<div class="noneimportant"  id="address2">
+
+        <div ><h1 style="text-align: center; padding-bottom: 2%;">About Me</h1></div>
+        <div style="padding:2% 10%;">
+        I am a Master's student in Civil Engineering at Sharif University of Technology, with a Bachelor's degree in Civil Engineering from the same university. I graduated from Allame Helli Tehran High School and have a diverse skill set spanning engineering, programming, and design.
 </div>
-
-
+       
+<div>
 <h3 style="display: grid;place-content: center;">Individual Skills</h3>
 
 <div class="partb">
   
-  <div style="background-color: rgb(255, 255, 255);height: auto;" class="row">
-    <div style="background-color:whitesmoke;">
+  <div style="background-color:unset;height: auto;" class="row">
+    <div style="background-color:unset;">
    About skill
     </div>
     
-    <div style="background-color: whitesmoke;">
+    <div style="background-color: unset;">
     links and licenses
     </div>
-    <div style="background-color: whitesmoke">
+    <div style="background-color: unset">
 Details
     </div>  
   </div> 
 
 
-    <div style="background-color: rgb(32, 24, 24);height: auto;" class="row">
-      <div style="background-color: whitesmoke">
+    <div style="background-color:unset;height: auto;" class="row">
+      <div style="background-color: unset">
   Javascript ,html,css
       </div>
       
-      <div style="background-color: whitesmoke;">
+      <div style="background-color: unset;">
       created Websites
       </div>
-      <div style="background-color: whitesmoke;">
+      <div style="background-color: unset;">
 creating customize websites , (front & back)end  
       </div>  
     </div>  
 
       
-<div style="background-color: rgb(32, 24, 24);height: auto;" class="row">
-      <div style="background-color: whitesmoke;">
+<div style="background-color:unset;height: auto;" class="row">
+      <div style="background-color: unset;">
 AutoCad And 3D Modeling 
       </div>
       
-      <div style="background-color: whitesmoke;">
+      <div style="background-color: unset;">
         
       </div>
-      <div style="background-color:whitesmoke;">
+      <div style="background-color:unset;">
     3D modeling for Structures and Pipline and point clouds
 
       </div>  
     </div>  
 
 
-    <div style="background-color: rgb(32, 24, 24);height: auto;" class="row">
-      <div style="background-color: whitesmoke;">
+    <div style="background-color:unset;height: auto;" class="row">
+      <div style="background-color: unset;">
 Matlab
       </div>
       
-      <div style="background-color:whitesmoke;">	
+      <div style="background-color:unset;">	
       
       </div>
-      <div style="background-color:whitesmoke;">
+      <div style="background-color:unset;">
  Apps , programs , simulink Specialy for Numerical Solving
       </div>  
     </div>  
 
-    <div style="background-color: rgb(32, 24, 24);height: auto;" class="row">
-      <div style="background-color:whitesmoke;">
+    <div style="background-color:unset;height: auto;" class="row">
+      <div style="background-color:unset;">
 English Language
       </div>
       
-      <div style="background-color: whitesmoke;">
+      <div>
 
       </div>
-      <div style="background-color:whitesmoke;">
+      <div >
 
         19.2/20 at Level C1 Course 
 
       </div>  
     </div>  
 
+</div></div>
+      
+      </div>
+
 </div>
+
+</div>
+
+
+<section >
+ <div id="planepoints" style="height: 300px;background: linear-gradient(to left,rgb(41, 124, 240),rgb(38, 228, 180));position: relative;
+ margin: 20px;">
+
+   
+    </div>
+
+</section>
+
 
 <h3 style="display: grid;place-content: center;margin: 20px 20px;">Professional Abilities</h3>
 
@@ -495,6 +515,7 @@ English Language
 
 <div>
 
+  <div class="card">
   <div class="flip-box">
     <div class="flip-box-inner">
       <div class="flip-box-front">
@@ -505,7 +526,12 @@ English Language
         <p>Designs,sketch and schem</p>
       </div>
     </div>
-  </div>
+
+</div>
+<div class="card-title">
+sdasdad
+
+</div>
 
 </div>
 
@@ -542,6 +568,7 @@ English Language
 
 
 
-  <script  src="menu.js"></script>
+  <script  src="./menu.js"></script>
 
+<script  src="./randompoints.js"></script>
 </html>
