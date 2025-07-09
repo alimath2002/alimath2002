@@ -1,0 +1,276 @@
+@font-face{font-family:bnaz;src: url("../fonts/static/Roboto-Regular.ttf");
+    margin: 0% auto;}
+    *{margin: 0px; font-family:bnaz ;}
+    body {background-color: white;}
+    a{color:black; text-decoration:none;background-color:rgb(rgba(255, 0, 0, 0), rgba(0, 128, 0, 0), rgba(0, 0, 255, 0));}
+    body{margin:0px;}  
+        h1{text-align: right ;margin:0px;align-items: flex-end; }
+        nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr  4fr; color:rgb(46, 43, 43) ;padding-top:5px ;font-size:20px ;
+        direction: rtl;background-color: rgb(255, 255, 255);}
+        nav div{ display: flexbox; gap:5px ;text-align: center;cursor: pointer ;border-radius: 2%; text-align: center;}
+        nav div a{justify-items: center;align-items: center;text-align: center;padding-top: 3%;}
+        nav div:hover{ background-color: rgba(84, 85, 84, 0.726);padding: auto auto;animation: coloringgray 2s;}
+        nav div a:hover{color: rgb(44, 44, 39);}
+        nav div a:active{color: rgb(180, 44, 143);}
+        .navbuttom{height: 100%;width: 100%;}
+       .search_item{display: none;}
+       .language{background-color:rgb(97, 129, 188);
+        cursor: pointer;text-align:center;}
+        .navbuttom{border-radius: 6px;}
+header{z-index:1;}
+        #mainnavcontiner{ box-shadow: 3px 3px rgb(20, 227, 227);} 
+        #toplogo{height:130px ;}    
+
+        #menupage{overflow:scroll;border-radius: 5%;animation: imerge 0.3s;}
+#menupage div{border-bottom: 1px solid rgb(237, 235, 235) ;padding: 5%;cursor: pointer;animation: imerge2 2s;}
+#menupage a{color: white;}
+#menupage div:hover{background-color: rgb(194, 230, 159);animation: coloring 1s;}    
+  
+@keyframes coloring{from{background-color:rgba(255, 255, 255, 0);}
+to{background-color:  rgb(194, 230, 159);}    
+} 
+
+@keyframes imerge{from{width: 0%;}
+to{width: 70%;}    
+} 
+@keyframes imerge2{from{width: 0%;}
+to{width: 100%;}    
+} 
+@keyframes coloringgray{from{background-color:rgba(255, 255, 255, 0);}
+to{background-color:  rgba(84, 85, 84, 0.726);}    
+} 
+main{background: linear-gradient(to left,rgb(41, 124, 240),rgb(38, 228, 180)); padding-bottom:2% ; }
+    #parta{display: grid ;grid-template-columns:1fr 2fr; gap: 4px ; text-align: center;
+       padding-top: 5%;}
+    #parta img{width:55%;height:auto; border-radius:5% ; border: 5px solid black; margin-bottom:12px; }
+    
+    #parta div{ border-radius:10% ;height:auto;background-color: rgba(255, 255, 255, 0.825);}
+    
+    #address div{text-align: left;}
+    
+    
+    
+
+
+
+
+
+
+    .flip-box {
+      background-color: transparent;
+      width: 300px;
+      height: 200px;
+      border: 1px solid #f1f1f1;
+      perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-box-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      transition: transform 0.8s;
+      transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-box:hover .flip-box-inner {
+      transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-box-front, .flip-box-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-box-front {
+      background-color: #bbb;
+      color: black;
+    }
+    
+    /* Style the back side */
+    .flip-box-back {
+      background-color: dodgerblue;
+      color: rgb(26, 157, 209);
+      transform: rotateY(180deg);
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ /* Basic styling for the button */
+    .nav-button {
+      background-color: white;
+     
+      margin-right: 2px;
+      color: rgb(46, 46, 126);
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      cursor: pointer;
+      position: relative;
+    }
+
+    .nav-button:hover{
+      background: linear-gradient(to left,rgb(34, 183, 206),rgb(15, 93, 196));;
+      color: white;
+      animation: appearmenuebutt 0.65s  ;
+    }
+
+    /* Dropdown menu container */
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      
+      
+    }
+
+    /* Dropdown menu items */
+    .dropdown-menu a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      background-color: #f9f9f9;
+      
+    }
+
+    /* Hover effect for menu items */
+    .dropdown-menu a:hover {
+     background: linear-gradient(to left,rgb(34, 183, 206),rgb(15, 93, 196));;
+      color: white;
+      animation: appearmenuebutt 0.65s  ;
+      
+    }
+
+    /* Show the dro/pdown menu on hover */
+    .nav-button:hover .dropdown-menu {
+      display: block;
+      z-index:10;
+    }
+
+
+.sobnav-button{background-color: white;
+     
+      margin: 0px;
+      color: rgb(18, 18, 26);
+      padding: 10px 20px;
+      font-size: 16px;
+      border: none;
+      position: relative;
+    display: flexbox;
+  }
+
+
+    .subdropdown{
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+      left: 95%;
+      }
+
+
+ .sobnav-button:hover{
+      background: linear-gradient(to left,rgb(34, 183, 206),rgb(15, 93, 196));;
+      color: white;
+      animation: appearmenuebutt 0.65s  ;
+    }
+
+.sobnav-button:hover  .subdropdown{ 
+     display:block;
+    }
+
+
+
+
+
+
+
+
+    #bartext{animation: bar 10s infinite 1s linear;}
+    
+
+    
+    @keyframes bar {from{right:100%} to{right: 0%;}
+        
+    }
+    
+    
+    .partb{margin:5px 5px ;border-radius:0%;}
+    .partb .row{display: grid;grid-template-columns: 1fr 1fr 5fr;align-items: center;text-align: center;width: 100%;}
+    
+    .partb div div{align-items: center;display: grid;place-content: center;width: 100%;height: 100%;margin-top:10px;}
+
+    .card-title{ background: linear-gradient(to top,rgba(0, 0, 1, 0.43),rgba(0, 0, 0, 0.222));
+      color: #f1f1f1;border-radius: 20px;
+    }
+
+    
+    #partc{display: grid ;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:5px ; } 
+    #partc div{display: grid;place-content: center; border-radius: 3%;} 
+    #partc div:hover{animation: coloringgray 1s;background-color: rgb(212, 212, 212); } 
+
+    #partc img{width: 150px;height:70px ;display: block;margin-bottom: 6px;}
+    @keyframes coloringgray{from{background-color:rgba(255, 255, 255, 0);}
+    to{background-color:  rgb(212, 212, 212);}    
+    }   
+    
+    
+    @keyframes scale{50%{transform:scale(2,2) ;}}
+    
+    
+    
+    @keyframes sheetpaper{from{right:90%} to{right: 0%;}    
+    }
+    
+    #blurerfoot{position: absolute;bottom: 0%;width: 100%;position: fixed;z-index: -3;height: 400px;background-color: rgba(33, 115, 230, 0.516);}
+    
+    footer{text-align: center;border-top:solid 3px ;display: grid ;grid-template-columns:repeat(auto-fit,minmax(400px,1fr));margin:0px ;color: aliceblue;
+    }
+    footer div{ text-align: center;z-index: -1;}
+    footer div p{padding:8px ;}
+    footer div{ height:250px ;} 
+   
+    
+    @media screen and (max-width:910px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;}  .minimmm{display: block;} #minimenue{display: none;} }
+
+    @media screen and (max-width:3000px){nav{display: grid;grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;} nav div{height: 45px; display: grid;place-content:center ;}  #mini_menue{ background-color: blue; }
+     .minimmm{display: block;} #minimenue{display: none;} }
+    
+    @media screen and (max-width:560px){nav{position: fixed;} #corpname{display: none; }    .minimmm{display: block;} .overnav{display: none;} 
+    main{margin-top:0px;padding-top: 100px;}  #mainnavcontiner{position: fixed;}  .partb div div{font-size:80%;}
+  .navbuttom{display: none;} footer{display: block; width: 100%;} section  li{font-size: 95%;} section  div{font-size: 76%;}
+#parta{display: grid ;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));} #minimenue{display: block;} .partb div{font-size: 13px;}
+footer div{ height:200px ;margin-bottom: 30px;}   #backwebimage{width: 100%;height:27%;margin-bottom: 40px;}
+#blurerfoot{ height:300px ;} #removeonphone{display: none;}
+#toplogo{height:60px ;} #maintitle{font-size: 25px;}
+.nav-button{display: none;} #navborder{display: none;}   .dropdown-menu{display: none;}}
+
+@media screen and (max-width:340px){  #parta{padding:auto}  #tableofpositions div div{width: 100%;} 
+.partb{width:100%;} #tableofpositions{width:100%;} .noneimportant{width:78%} .noneimportant2{width:82% ;} }
+    
