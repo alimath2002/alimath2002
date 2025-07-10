@@ -11,14 +11,14 @@ document.getElementById('headercontent').innerHTML=`
     position: fixed;" class="menulittle">
     <div style="display: flex;align-items: center;justify-content: center;align-content: center;">
       <h1 style="text-align: center;">
-        Dr. Mirmosadegh jamali
+        Ali M. Sepehr
       </h1>
   
     </div>
   <div onclick="openspcmenu(1)" onmousemove="openspcmenu(1)">
     About
     <div class="aboutmenue1 ; aboutmenuall" style="display: none;">
-      <a href="index.html" style=" display: block;width: 100%;height: 100%;"> Ali M. Sepehr</a>
+      <a href="../index.html" style=" display: block;width: 100%;height: 100%;"> Ali M. Sepehr</a>
     </div>
     
   </div>
@@ -90,7 +90,7 @@ document.getElementById('headercontent').innerHTML=`
  
       
       <div style="text-align: right;">
-        <a href="index.html" style="color: black;">
+        <a href="../index.html" style="color: black;">
         <h2 id="corpname" style="padding: 20px;background: linear-gradient(to left,rgb(41, 124, 240),rgb(38, 228, 180)); color: aliceblue;
         font-size: 38px;font-family: boldedde;">
             Sharif University of Technology
